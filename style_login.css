@@ -1,0 +1,57 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#frm {
+  border: none;
+  width: 30%;
+  border-radius: 8px;
+  margin: 120px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#frm h1,
+#frm h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#frm input[type="text"],
+#frm input[type="email"],
+#frm input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+#frm input[type="text"]:focus,
+#frm input[type="email"]:focus,
+#frm input[type="password"]:focus {
+  border-bottom-color: #337ab7;
+}
+
+#btn {
+  color: #fff;
+  background-color: #337ab7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#btn:hover {
+  background-color: #23527c;
+}

@@ -1,0 +1,15 @@
+#cart-window {
+	width: 300px;
+	height: 400px;
+	border: 1px solid black;
+	padding: 10px;
+	overflow: auto;
+}
+
+.cart-item {
+	border: 1px solid grey;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+

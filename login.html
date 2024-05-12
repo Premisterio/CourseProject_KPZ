@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Система логіну PHP</title>
+    <link rel="stylesheet" type="text/css" href="style_login.css" />
+  </head>
+  <body>
+    <div id="frm">
+      <h1>Авторизація</h1>
+      <form
+        name="f1"
+        action="authentication.php"
+        onsubmit="return validation()"
+        method="POST"
+      >
+        <p>
+          <label> Ім'я користувача: </label>
+          <input type="text" id="user" name="user" />
+        </p>
+        <p>
+          <label> Пароль: </label>
+          <input type="password" id="pass" name="pass" />
+        </p>
+        <p>
+          <input type="submit" id="btn" value="Авторизація" />
+        </p>
+      </form>
+    </div>
+    <script>
+      function validation() {
+        var id = document.f1.user.value;
+        var ps = document.f1.pass.value;
+        if (id.length == "" && ps.length == "") {
+          alert("Ім'я користувача та пароль повинні бути заповненими.");
+          return false;
+        } else {
+          if (id.length == "") {
+            alert("Ім'я користувача не заповнене.");
+            return false;
+          }
+          if (ps.length == "") {
+            alert("Пароль не заповнений.");
+            return false;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
